@@ -1,0 +1,24 @@
+@use "../../utils/variables" as *;
+
+.footer {
+  font-family: $default_font_family;
+  background-color: $primary_color;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 80px;
+  .socialMedias {
+    display: flex;
+    gap: 10px;
+    a {
+      font-size: 40px;
+      color: $secondary_color;
+    }
+  }
+  .rights {
+    color: $secondary_color;
+  }
+}

@@ -1,0 +1,25 @@
+@use "../../utils/variables" as *;
+.navbar {
+  font-family: $default_font_family;
+  background: $primary_color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px 10px 10px;
+  &__img {
+    width: 120px;
+    height: auto;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__links {
+    a {
+      text-decoration: none;
+      margin: 10px;
+      color: $secondary_color;
+    }
+  }
+}
