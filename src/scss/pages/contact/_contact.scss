@@ -2,19 +2,22 @@
 .contact {
   font-family: $default_font_family;
   display: flex;
+  justify-content: center;
   align-items: center;
   padding: 20px 0;
-  .left_side{
-    .img{
-        width: 600px;
-        img{ width: 100%;}
+  .left_side {
+    .img {
+      width: 600px;
+      img {
+        width: 100%;
+      }
     }
   }
   .right_side {
     width: 400px;
     margin-left: 20px;
-    h1{
-        margin-bottom: 30px;
+    h1 {
+      margin-bottom: 30px;
     }
     form {
       display: flex;
@@ -26,6 +29,27 @@
         outline: 0;
         border-width: 0 0 2px;
       }
+    }
+  }
+  @media (max-width: 1050px) {
+    .img {
+      width: 500px !important;
+    }
+  }
+  @media (max-width: 992px) {
+    .img {
+      width: 450px !important;
+    }
+    .right_side {
+      width: 380px !important;
+    }
+  }
+  @media (max-width: 768px) {
+    .img {
+      width: 400px !important;
+    }
+    .right_side {
+      width: 350px !important;
     }
   }
 }
