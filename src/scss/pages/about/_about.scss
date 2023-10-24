@@ -1,9 +1,9 @@
 .about {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
   .img {
     width: 1200px;
     height: auto;
@@ -15,14 +15,25 @@
       height: 100%;
     }
   }
-  .bottom_texts{
+  .bottom_texts {
     text-align: center;
     margin: 40px 0;
-    h1{
-        margin-bottom: 20px;
+    h1 {
+      margin-bottom: 20px;
     }
-    p{
-        line-height: 30px;
+    p {
+      line-height: 30px;
+      text-align: left;
+    }
+  }
+  @media (max-width: 768px) {
+    .img {
+      width: 740px !important;
+    }
+  }
+  @media (max-width: 576px) {
+    .img {
+      width: 340px !important;
     }
   }
 }

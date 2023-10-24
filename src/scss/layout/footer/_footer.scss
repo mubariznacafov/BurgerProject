@@ -21,4 +21,11 @@
   .rights {
     color: $secondary_color;
   }
+  @media (max-width: 576px) {
+    .rights {
+      p {
+        width: 300px !important;
+      }
+    }
+  }
 }
